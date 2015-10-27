@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BGPhotoListCell" rowHeight="104" id="KGk-i7-Jjw" customClass="BGPhotoListCell" customModule="BGPhotoPickerControllerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LeZ-Nu-dBT">
+                        <rect key="frame" x="8" y="8" width="87.5" height="87.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LeZ-Nu-dBT" secondAttribute="height" multiplier="1:1" id="gbp-yC-qkZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所有相片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZY-sA-kwL">
+                        <rect key="frame" x="115" y="41" width="72" height="21.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(100)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZx-rO-cSe">
+                        <rect key="frame" x="189" y="43" width="33.5" height="17"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2d7-C3-CCS">
+                        <rect key="frame" x="8" y="103" width="304" height="0.5"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="8m6-5W-1XJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="zZx-rO-cSe" firstAttribute="leading" secondItem="KZY-sA-kwL" secondAttribute="trailing" constant="2" id="EAI-dd-wZO"/>
+                    <constraint firstItem="LeZ-Nu-dBT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="MqA-Yp-j94"/>
+                    <constraint firstItem="zZx-rO-cSe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Onx-pk-itA"/>
+                    <constraint firstAttribute="bottom" secondItem="2d7-C3-CCS" secondAttribute="bottom" id="Rna-SE-2ZY"/>
+                    <constraint firstItem="LeZ-Nu-dBT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="UM5-ZW-qdi"/>
+                    <constraint firstItem="KZY-sA-kwL" firstAttribute="leading" secondItem="LeZ-Nu-dBT" secondAttribute="trailing" constant="20" id="XEC-aD-TBd"/>
+                    <constraint firstAttribute="bottom" secondItem="LeZ-Nu-dBT" secondAttribute="bottom" constant="8" id="bVJ-Ae-csM"/>
+                    <constraint firstAttribute="trailing" secondItem="2d7-C3-CCS" secondAttribute="trailing" constant="8" id="cHE-6T-uaa"/>
+                    <constraint firstItem="KZY-sA-kwL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hN1-xX-dC2"/>
+                    <constraint firstItem="2d7-C3-CCS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="vCj-IA-R9s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="ablumLabel" destination="KZY-sA-kwL" id="2pU-KV-Ycp"/>
+                <outlet property="headImageView" destination="LeZ-Nu-dBT" id="zQs-qH-2VK"/>
+                <outlet property="numLabel" destination="zZx-rO-cSe" id="1df-5G-jTa"/>
+            </connections>
+            <point key="canvasLocation" x="374" y="221"/>
+        </tableViewCell>
+    </objects>
+</document>

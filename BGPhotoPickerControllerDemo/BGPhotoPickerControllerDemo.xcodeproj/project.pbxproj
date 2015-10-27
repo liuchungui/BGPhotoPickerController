@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE017D381BCF921D0067FA49 /* BGBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE017D2F1BCF921D0067FA49 /* BGBaseViewController.swift */; };
+		CE017D391BCF921D0067FA49 /* BGConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE017D301BCF921D0067FA49 /* BGConstant.swift */; };
+		CE017D3A1BCF921D0067FA49 /* BGUtilFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE017D311BCF921D0067FA49 /* BGUtilFunction.swift */; };
+		CE017D3B1BCF921D0067FA49 /* UICollectionViewCell+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE017D331BCF921D0067FA49 /* UICollectionViewCell+BGExtension.swift */; };
+		CE017D3C1BCF921D0067FA49 /* UIImage+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE017D341BCF921D0067FA49 /* UIImage+BGExtension.swift */; };
+		CE017D3D1BCF921D0067FA49 /* UITableViewCell+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE017D351BCF921D0067FA49 /* UITableViewCell+BGExtension.swift */; };
+		CE017D3E1BCF921D0067FA49 /* UIView+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE017D361BCF921D0067FA49 /* UIView+BGExtension.swift */; };
+		CE017D3F1BCF921D0067FA49 /* UIViewController+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE017D371BCF921D0067FA49 /* UIViewController+BGExtension.swift */; };
+		CE017D411BCF93B70067FA49 /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE017D401BCF93B70067FA49 /* nav_back@2x.png */; };
+		CE017D431BCF94310067FA49 /* UIButton+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE017D421BCF94310067FA49 /* UIButton+BGExtension.swift */; };
+		CE0275341BD3E6D200C9FEB6 /* BGBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0275331BD3E6D200C9FEB6 /* BGBaseNavigationController.swift */; };
+		CE0834261BD09B3E00305642 /* BGPhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0834251BD09B3E00305642 /* BGPhotoListViewController.swift */; };
+		CE08B7B61BCDFD440063FCE5 /* AssetsPickerChecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE08B7B51BCDFD440063FCE5 /* AssetsPickerChecked@2x.png */; };
+		CE08B7C61BCE07700063FCE5 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7B81BCE07700063FCE5 /* Constraint.swift */; };
+		CE08B7C71BCE07700063FCE5 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7B91BCE07700063FCE5 /* ConstraintAttributes.swift */; };
+		CE08B7C81BCE07700063FCE5 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7BA1BCE07700063FCE5 /* ConstraintDescription.swift */; };
+		CE08B7C91BCE07700063FCE5 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7BB1BCE07700063FCE5 /* ConstraintItem.swift */; };
+		CE08B7CA1BCE07700063FCE5 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7BC1BCE07700063FCE5 /* ConstraintMaker.swift */; };
+		CE08B7CB1BCE07700063FCE5 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7BD1BCE07700063FCE5 /* ConstraintRelation.swift */; };
+		CE08B7CC1BCE07700063FCE5 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7BE1BCE07700063FCE5 /* Debugging.swift */; };
+		CE08B7CD1BCE07700063FCE5 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7BF1BCE07700063FCE5 /* EdgeInsets.swift */; };
+		CE08B7CF1BCE07700063FCE5 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7C11BCE07700063FCE5 /* LayoutConstraint.swift */; };
+		CE08B7D01BCE07700063FCE5 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7C31BCE07700063FCE5 /* SnapKit.swift */; };
+		CE08B7D11BCE07700063FCE5 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7C41BCE07700063FCE5 /* View+SnapKit.swift */; };
+		CE08B7D21BCE07700063FCE5 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7C51BCE07700063FCE5 /* ViewController+SnapKit.swift */; };
+		CE08B7EB1BCE53580063FCE5 /* BGPhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7E21BCE53580063FCE5 /* BGPhotoManager.swift */; };
+		CE08B7EC1BCE53580063FCE5 /* BGImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7E41BCE53580063FCE5 /* BGImagePickerController.swift */; };
+		CE08B7ED1BCE53580063FCE5 /* BGPhotoGrideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7E51BCE53580063FCE5 /* BGPhotoGrideController.swift */; };
+		CE08B7EE1BCE53580063FCE5 /* BGPhotoGrideController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE08B7E61BCE53580063FCE5 /* BGPhotoGrideController.xib */; };
+		CE08B7EF1BCE53580063FCE5 /* BGPhotoGrideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7E81BCE53580063FCE5 /* BGPhotoGrideCell.swift */; };
+		CE08B7F01BCE53580063FCE5 /* BGPhotoGrideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE08B7E91BCE53580063FCE5 /* BGPhotoGrideCell.xib */; };
+		CE08B7FB1BCE57310063FCE5 /* BGPhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7F91BCE57310063FCE5 /* BGPhotoPreviewViewController.swift */; };
+		CE08B7FC1BCE57310063FCE5 /* BGPhotoPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE08B7FA1BCE57310063FCE5 /* BGPhotoPreviewViewController.xib */; };
+		CE08B7FF1BCE59EC0063FCE5 /* BGPhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08B7FD1BCE59EC0063FCE5 /* BGPhotoPreviewCell.swift */; };
+		CE08B8001BCE59ED0063FCE5 /* BGPhotoPreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE08B7FE1BCE59EC0063FCE5 /* BGPhotoPreviewCell.xib */; };
+		CE0C0BAC1BCCE99C007878EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BAB1BCCE99C007878EE /* AppDelegate.swift */; };
+		CE0C0BAE1BCCE99C007878EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BAD1BCCE99C007878EE /* ViewController.swift */; };
+		CE0C0BB11BCCE99C007878EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0BAF1BCCE99C007878EE /* Main.storyboard */; };
+		CE0C0BB31BCCE99C007878EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0BB21BCCE99C007878EE /* Assets.xcassets */; };
+		CE0C0BB61BCCE99C007878EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0BB41BCCE99C007878EE /* LaunchScreen.storyboard */; };
+		CE0C0BC11BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BC01BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.swift */; };
+		CE0C0BCC1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BCB1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.swift */; };
+		CE0F62BE1BD1E456004D0EDE /* BGPhotoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F62BC1BD1E456004D0EDE /* BGPhotoListCell.swift */; };
+		CE0F62BF1BD1E456004D0EDE /* BGPhotoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0F62BD1BD1E456004D0EDE /* BGPhotoListCell.xib */; };
+		CE59CC7B1BDCC1F600F09FFC /* BGPhotoAblum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59CC7A1BDCC1F600F09FFC /* BGPhotoAblum.swift */; };
+		CE59CC7F1BDD0D5500F09FFC /* BGPhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59CC7E1BDD0D5500F09FFC /* BGPhotoAsset.swift */; };
+		CE59CC841BDD1FCC00F09FFC /* BGPhotoBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59CC831BDD1FCC00F09FFC /* BGPhotoBaseController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE0C0BBD1BCCE99C007878EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0C0BA01BCCE99C007878EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE0C0BA71BCCE99C007878EE;
+			remoteInfo = BGPhotoPickerControllerDemo;
+		};
+		CE0C0BC81BCCE99C007878EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0C0BA01BCCE99C007878EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE0C0BA71BCCE99C007878EE;
+			remoteInfo = BGPhotoPickerControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE017D2F1BCF921D0067FA49 /* BGBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGBaseViewController.swift; sourceTree = "<group>"; };
+		CE017D301BCF921D0067FA49 /* BGConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGConstant.swift; sourceTree = "<group>"; };
+		CE017D311BCF921D0067FA49 /* BGUtilFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGUtilFunction.swift; sourceTree = "<group>"; };
+		CE017D331BCF921D0067FA49 /* UICollectionViewCell+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+BGExtension.swift"; sourceTree = "<group>"; };
+		CE017D341BCF921D0067FA49 /* UIImage+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+BGExtension.swift"; sourceTree = "<group>"; };
+		CE017D351BCF921D0067FA49 /* UITableViewCell+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+BGExtension.swift"; sourceTree = "<group>"; };
+		CE017D361BCF921D0067FA49 /* UIView+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BGExtension.swift"; sourceTree = "<group>"; };
+		CE017D371BCF921D0067FA49 /* UIViewController+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+BGExtension.swift"; sourceTree = "<group>"; };
+		CE017D401BCF93B70067FA49 /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
+		CE017D421BCF94310067FA49 /* UIButton+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+BGExtension.swift"; sourceTree = "<group>"; };
+		CE0275331BD3E6D200C9FEB6 /* BGBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGBaseNavigationController.swift; sourceTree = "<group>"; };
+		CE0834251BD09B3E00305642 /* BGPhotoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoListViewController.swift; sourceTree = "<group>"; };
+		CE08B7B51BCDFD440063FCE5 /* AssetsPickerChecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AssetsPickerChecked@2x.png"; sourceTree = "<group>"; };
+		CE08B7B81BCE07700063FCE5 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		CE08B7B91BCE07700063FCE5 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		CE08B7BA1BCE07700063FCE5 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		CE08B7BB1BCE07700063FCE5 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		CE08B7BC1BCE07700063FCE5 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		CE08B7BD1BCE07700063FCE5 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		CE08B7BE1BCE07700063FCE5 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		CE08B7BF1BCE07700063FCE5 /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
+		CE08B7C11BCE07700063FCE5 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		CE08B7C21BCE07700063FCE5 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		CE08B7C31BCE07700063FCE5 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		CE08B7C41BCE07700063FCE5 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
+		CE08B7C51BCE07700063FCE5 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		CE08B7E21BCE53580063FCE5 /* BGPhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BGPhotoManager.swift; path = BGPhotoPickerController/BGPhotoManager.swift; sourceTree = "<group>"; };
+		CE08B7E41BCE53580063FCE5 /* BGImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGImagePickerController.swift; sourceTree = "<group>"; };
+		CE08B7E51BCE53580063FCE5 /* BGPhotoGrideController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoGrideController.swift; sourceTree = "<group>"; };
+		CE08B7E61BCE53580063FCE5 /* BGPhotoGrideController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGPhotoGrideController.xib; sourceTree = "<group>"; };
+		CE08B7E81BCE53580063FCE5 /* BGPhotoGrideCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoGrideCell.swift; sourceTree = "<group>"; };
+		CE08B7E91BCE53580063FCE5 /* BGPhotoGrideCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGPhotoGrideCell.xib; sourceTree = "<group>"; };
+		CE08B7F91BCE57310063FCE5 /* BGPhotoPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoPreviewViewController.swift; sourceTree = "<group>"; };
+		CE08B7FA1BCE57310063FCE5 /* BGPhotoPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGPhotoPreviewViewController.xib; sourceTree = "<group>"; };
+		CE08B7FD1BCE59EC0063FCE5 /* BGPhotoPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoPreviewCell.swift; sourceTree = "<group>"; };
+		CE08B7FE1BCE59EC0063FCE5 /* BGPhotoPreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGPhotoPreviewCell.xib; sourceTree = "<group>"; };
+		CE0C0BA81BCCE99C007878EE /* BGPhotoPickerControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGPhotoPickerControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0C0BAB1BCCE99C007878EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE0C0BAD1BCCE99C007878EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE0C0BB01BCCE99C007878EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE0C0BB21BCCE99C007878EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE0C0BB51BCCE99C007878EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE0C0BB71BCCE99C007878EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0C0BBC1BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGPhotoPickerControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0C0BC01BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGPhotoPickerControllerDemoTests.swift; sourceTree = "<group>"; };
+		CE0C0BC21BCCE99C007878EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0C0BC71BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGPhotoPickerControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0C0BCB1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGPhotoPickerControllerDemoUITests.swift; sourceTree = "<group>"; };
+		CE0C0BCD1BCCE99C007878EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0F62BC1BD1E456004D0EDE /* BGPhotoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoListCell.swift; sourceTree = "<group>"; };
+		CE0F62BD1BD1E456004D0EDE /* BGPhotoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGPhotoListCell.xib; sourceTree = "<group>"; };
+		CE59CC7A1BDCC1F600F09FFC /* BGPhotoAblum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoAblum.swift; sourceTree = "<group>"; };
+		CE59CC7E1BDD0D5500F09FFC /* BGPhotoAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoAsset.swift; sourceTree = "<group>"; };
+		CE59CC831BDD1FCC00F09FFC /* BGPhotoBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoBaseController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE0C0BA51BCCE99C007878EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C0BB91BCCE99C007878EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C0BC41BCCE99C007878EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE017D2E1BCF921D0067FA49 /* BGFoundationKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE017D2F1BCF921D0067FA49 /* BGBaseViewController.swift */,
+				CE0275331BD3E6D200C9FEB6 /* BGBaseNavigationController.swift */,
+				CE017D301BCF921D0067FA49 /* BGConstant.swift */,
+				CE017D311BCF921D0067FA49 /* BGUtilFunction.swift */,
+				CE017D321BCF921D0067FA49 /* Extension */,
+			);
+			path = BGFoundationKit;
+			sourceTree = "<group>";
+		};
+		CE017D321BCF921D0067FA49 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE017D331BCF921D0067FA49 /* UICollectionViewCell+BGExtension.swift */,
+				CE017D341BCF921D0067FA49 /* UIImage+BGExtension.swift */,
+				CE017D351BCF921D0067FA49 /* UITableViewCell+BGExtension.swift */,
+				CE017D361BCF921D0067FA49 /* UIView+BGExtension.swift */,
+				CE017D371BCF921D0067FA49 /* UIViewController+BGExtension.swift */,
+				CE017D421BCF94310067FA49 /* UIButton+BGExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE08B7B41BCDFD3D0063FCE5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CE017D401BCF93B70067FA49 /* nav_back@2x.png */,
+				CE08B7B51BCDFD440063FCE5 /* AssetsPickerChecked@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CE08B7B71BCE07700063FCE5 /* Snapkit */ = {
+			isa = PBXGroup;
+			children = (
+				CE08B7B81BCE07700063FCE5 /* Constraint.swift */,
+				CE08B7B91BCE07700063FCE5 /* ConstraintAttributes.swift */,
+				CE08B7BA1BCE07700063FCE5 /* ConstraintDescription.swift */,
+				CE08B7BB1BCE07700063FCE5 /* ConstraintItem.swift */,
+				CE08B7BC1BCE07700063FCE5 /* ConstraintMaker.swift */,
+				CE08B7BD1BCE07700063FCE5 /* ConstraintRelation.swift */,
+				CE08B7BE1BCE07700063FCE5 /* Debugging.swift */,
+				CE08B7BF1BCE07700063FCE5 /* EdgeInsets.swift */,
+				CE08B7C11BCE07700063FCE5 /* LayoutConstraint.swift */,
+				CE08B7C21BCE07700063FCE5 /* SnapKit.h */,
+				CE08B7C31BCE07700063FCE5 /* SnapKit.swift */,
+				CE08B7C41BCE07700063FCE5 /* View+SnapKit.swift */,
+				CE08B7C51BCE07700063FCE5 /* ViewController+SnapKit.swift */,
+			);
+			name = Snapkit;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CE08B7E31BCE53580063FCE5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE08B7E41BCE53580063FCE5 /* BGImagePickerController.swift */,
+				CE0834251BD09B3E00305642 /* BGPhotoListViewController.swift */,
+				CE08B7E51BCE53580063FCE5 /* BGPhotoGrideController.swift */,
+				CE08B7E61BCE53580063FCE5 /* BGPhotoGrideController.xib */,
+				CE08B7F91BCE57310063FCE5 /* BGPhotoPreviewViewController.swift */,
+				CE08B7FA1BCE57310063FCE5 /* BGPhotoPreviewViewController.xib */,
+				CE59CC831BDD1FCC00F09FFC /* BGPhotoBaseController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE08B7E71BCE53580063FCE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE08B7E81BCE53580063FCE5 /* BGPhotoGrideCell.swift */,
+				CE08B7E91BCE53580063FCE5 /* BGPhotoGrideCell.xib */,
+				CE08B7FD1BCE59EC0063FCE5 /* BGPhotoPreviewCell.swift */,
+				CE08B7FE1BCE59EC0063FCE5 /* BGPhotoPreviewCell.xib */,
+				CE0F62BC1BD1E456004D0EDE /* BGPhotoListCell.swift */,
+				CE0F62BD1BD1E456004D0EDE /* BGPhotoListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE0C0B9F1BCCE99C007878EE = {
+			isa = PBXGroup;
+			children = (
+				CE0C0BAA1BCCE99C007878EE /* BGPhotoPickerControllerDemo */,
+				CE0C0BBF1BCCE99C007878EE /* BGPhotoPickerControllerDemoTests */,
+				CE0C0BCA1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests */,
+				CE0C0BA91BCCE99C007878EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE0C0BA91BCCE99C007878EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0BA81BCCE99C007878EE /* BGPhotoPickerControllerDemo.app */,
+				CE0C0BBC1BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.xctest */,
+				CE0C0BC71BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE0C0BAA1BCCE99C007878EE /* BGPhotoPickerControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CE08B7B71BCE07700063FCE5 /* Snapkit */,
+				CE0C0BDA1BCCEE9B007878EE /* BGPhotoPickerController */,
+				CE08B7E21BCE53580063FCE5 /* BGPhotoManager.swift */,
+				CE0C0BAB1BCCE99C007878EE /* AppDelegate.swift */,
+				CE0C0BAD1BCCE99C007878EE /* ViewController.swift */,
+				CE0C0BAF1BCCE99C007878EE /* Main.storyboard */,
+				CE0C0BB21BCCE99C007878EE /* Assets.xcassets */,
+				CE0C0BB41BCCE99C007878EE /* LaunchScreen.storyboard */,
+				CE0C0BB71BCCE99C007878EE /* Info.plist */,
+			);
+			path = BGPhotoPickerControllerDemo;
+			sourceTree = "<group>";
+		};
+		CE0C0BBF1BCCE99C007878EE /* BGPhotoPickerControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0BC01BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.swift */,
+				CE0C0BC21BCCE99C007878EE /* Info.plist */,
+			);
+			path = BGPhotoPickerControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		CE0C0BCA1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0BCB1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.swift */,
+				CE0C0BCD1BCCE99C007878EE /* Info.plist */,
+			);
+			path = BGPhotoPickerControllerDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE0C0BDA1BCCEE9B007878EE /* BGPhotoPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				CE59CC771BDCC1AE00F09FFC /* Model */,
+				CE017D2E1BCF921D0067FA49 /* BGFoundationKit */,
+				CE08B7E31BCE53580063FCE5 /* Controller */,
+				CE08B7E71BCE53580063FCE5 /* Views */,
+				CE08B7B41BCDFD3D0063FCE5 /* Resource */,
+			);
+			path = BGPhotoPickerController;
+			sourceTree = "<group>";
+		};
+		CE59CC771BDCC1AE00F09FFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE59CC7A1BDCC1F600F09FFC /* BGPhotoAblum.swift */,
+				CE59CC7E1BDD0D5500F09FFC /* BGPhotoAsset.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE0C0BA71BCCE99C007878EE /* BGPhotoPickerControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0C0BD01BCCE99C007878EE /* Build configuration list for PBXNativeTarget "BGPhotoPickerControllerDemo" */;
+			buildPhases = (
+				CE0C0BA41BCCE99C007878EE /* Sources */,
+				CE0C0BA51BCCE99C007878EE /* Frameworks */,
+				CE0C0BA61BCCE99C007878EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BGPhotoPickerControllerDemo;
+			productName = BGPhotoPickerControllerDemo;
+			productReference = CE0C0BA81BCCE99C007878EE /* BGPhotoPickerControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE0C0BBB1BCCE99C007878EE /* BGPhotoPickerControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0C0BD31BCCE99C007878EE /* Build configuration list for PBXNativeTarget "BGPhotoPickerControllerDemoTests" */;
+			buildPhases = (
+				CE0C0BB81BCCE99C007878EE /* Sources */,
+				CE0C0BB91BCCE99C007878EE /* Frameworks */,
+				CE0C0BBA1BCCE99C007878EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE0C0BBE1BCCE99C007878EE /* PBXTargetDependency */,
+			);
+			name = BGPhotoPickerControllerDemoTests;
+			productName = BGPhotoPickerControllerDemoTests;
+			productReference = CE0C0BBC1BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE0C0BC61BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0C0BD61BCCE99C007878EE /* Build configuration list for PBXNativeTarget "BGPhotoPickerControllerDemoUITests" */;
+			buildPhases = (
+				CE0C0BC31BCCE99C007878EE /* Sources */,
+				CE0C0BC41BCCE99C007878EE /* Frameworks */,
+				CE0C0BC51BCCE99C007878EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE0C0BC91BCCE99C007878EE /* PBXTargetDependency */,
+			);
+			name = BGPhotoPickerControllerDemoUITests;
+			productName = BGPhotoPickerControllerDemoUITests;
+			productReference = CE0C0BC71BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE0C0BA01BCCE99C007878EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = BG;
+				TargetAttributes = {
+					CE0C0BA71BCCE99C007878EE = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					CE0C0BBB1BCCE99C007878EE = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = CE0C0BA71BCCE99C007878EE;
+					};
+					CE0C0BC61BCCE99C007878EE = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = CE0C0BA71BCCE99C007878EE;
+					};
+				};
+			};
+			buildConfigurationList = CE0C0BA31BCCE99C007878EE /* Build configuration list for PBXProject "BGPhotoPickerControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE0C0B9F1BCCE99C007878EE;
+			productRefGroup = CE0C0BA91BCCE99C007878EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE0C0BA71BCCE99C007878EE /* BGPhotoPickerControllerDemo */,
+				CE0C0BBB1BCCE99C007878EE /* BGPhotoPickerControllerDemoTests */,
+				CE0C0BC61BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE0C0BA61BCCE99C007878EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE08B7FC1BCE57310063FCE5 /* BGPhotoPreviewViewController.xib in Resources */,
+				CE0C0BB61BCCE99C007878EE /* LaunchScreen.storyboard in Resources */,
+				CE08B7F01BCE53580063FCE5 /* BGPhotoGrideCell.xib in Resources */,
+				CE0F62BF1BD1E456004D0EDE /* BGPhotoListCell.xib in Resources */,
+				CE0C0BB31BCCE99C007878EE /* Assets.xcassets in Resources */,
+				CE08B8001BCE59ED0063FCE5 /* BGPhotoPreviewCell.xib in Resources */,
+				CE08B7B61BCDFD440063FCE5 /* AssetsPickerChecked@2x.png in Resources */,
+				CE0C0BB11BCCE99C007878EE /* Main.storyboard in Resources */,
+				CE017D411BCF93B70067FA49 /* nav_back@2x.png in Resources */,
+				CE08B7EE1BCE53580063FCE5 /* BGPhotoGrideController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C0BBA1BCCE99C007878EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C0BC51BCCE99C007878EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE0C0BA41BCCE99C007878EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE08B7C61BCE07700063FCE5 /* Constraint.swift in Sources */,
+				CE08B7EB1BCE53580063FCE5 /* BGPhotoManager.swift in Sources */,
+				CE0C0BAE1BCCE99C007878EE /* ViewController.swift in Sources */,
+				CE08B7D21BCE07700063FCE5 /* ViewController+SnapKit.swift in Sources */,
+				CE08B7C71BCE07700063FCE5 /* ConstraintAttributes.swift in Sources */,
+				CE08B7CD1BCE07700063FCE5 /* EdgeInsets.swift in Sources */,
+				CE0275341BD3E6D200C9FEB6 /* BGBaseNavigationController.swift in Sources */,
+				CE08B7ED1BCE53580063FCE5 /* BGPhotoGrideController.swift in Sources */,
+				CE0C0BAC1BCCE99C007878EE /* AppDelegate.swift in Sources */,
+				CE017D431BCF94310067FA49 /* UIButton+BGExtension.swift in Sources */,
+				CE08B7CC1BCE07700063FCE5 /* Debugging.swift in Sources */,
+				CE59CC7F1BDD0D5500F09FFC /* BGPhotoAsset.swift in Sources */,
+				CE08B7EF1BCE53580063FCE5 /* BGPhotoGrideCell.swift in Sources */,
+				CE08B7D01BCE07700063FCE5 /* SnapKit.swift in Sources */,
+				CE017D3A1BCF921D0067FA49 /* BGUtilFunction.swift in Sources */,
+				CE0F62BE1BD1E456004D0EDE /* BGPhotoListCell.swift in Sources */,
+				CE59CC7B1BDCC1F600F09FFC /* BGPhotoAblum.swift in Sources */,
+				CE08B7D11BCE07700063FCE5 /* View+SnapKit.swift in Sources */,
+				CE0834261BD09B3E00305642 /* BGPhotoListViewController.swift in Sources */,
+				CE08B7EC1BCE53580063FCE5 /* BGImagePickerController.swift in Sources */,
+				CE017D3E1BCF921D0067FA49 /* UIView+BGExtension.swift in Sources */,
+				CE017D381BCF921D0067FA49 /* BGBaseViewController.swift in Sources */,
+				CE017D3B1BCF921D0067FA49 /* UICollectionViewCell+BGExtension.swift in Sources */,
+				CE08B7CB1BCE07700063FCE5 /* ConstraintRelation.swift in Sources */,
+				CE08B7CA1BCE07700063FCE5 /* ConstraintMaker.swift in Sources */,
+				CE017D391BCF921D0067FA49 /* BGConstant.swift in Sources */,
+				CE08B7CF1BCE07700063FCE5 /* LayoutConstraint.swift in Sources */,
+				CE08B7FB1BCE57310063FCE5 /* BGPhotoPreviewViewController.swift in Sources */,
+				CE017D3C1BCF921D0067FA49 /* UIImage+BGExtension.swift in Sources */,
+				CE017D3F1BCF921D0067FA49 /* UIViewController+BGExtension.swift in Sources */,
+				CE017D3D1BCF921D0067FA49 /* UITableViewCell+BGExtension.swift in Sources */,
+				CE59CC841BDD1FCC00F09FFC /* BGPhotoBaseController.swift in Sources */,
+				CE08B7C81BCE07700063FCE5 /* ConstraintDescription.swift in Sources */,
+				CE08B7C91BCE07700063FCE5 /* ConstraintItem.swift in Sources */,
+				CE08B7FF1BCE59EC0063FCE5 /* BGPhotoPreviewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C0BB81BCCE99C007878EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0C0BC11BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C0BC31BCCE99C007878EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0C0BCC1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE0C0BBE1BCCE99C007878EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE0C0BA71BCCE99C007878EE /* BGPhotoPickerControllerDemo */;
+			targetProxy = CE0C0BBD1BCCE99C007878EE /* PBXContainerItemProxy */;
+		};
+		CE0C0BC91BCCE99C007878EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE0C0BA71BCCE99C007878EE /* BGPhotoPickerControllerDemo */;
+			targetProxy = CE0C0BC81BCCE99C007878EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE0C0BAF1BCCE99C007878EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0C0BB01BCCE99C007878EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE0C0BB41BCCE99C007878EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0C0BB51BCCE99C007878EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE0C0BCE1BCCE99C007878EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE0C0BCF1BCCE99C007878EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE0C0BD11BCCE99C007878EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: shebing yang (EGKR2LRY9E)";
+				INFOPLIST_FILE = BGPhotoPickerControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BG.BGPhotoPickerControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "527e517b-8899-469d-adb3-126ca93eb839";
+			};
+			name = Debug;
+		};
+		CE0C0BD21BCCE99C007878EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BGPhotoPickerControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BG.BGPhotoPickerControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "527e517b-8899-469d-adb3-126ca93eb839";
+			};
+			name = Release;
+		};
+		CE0C0BD41BCCE99C007878EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BGPhotoPickerControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BG.BGPhotoPickerControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BGPhotoPickerControllerDemo.app/BGPhotoPickerControllerDemo";
+			};
+			name = Debug;
+		};
+		CE0C0BD51BCCE99C007878EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BGPhotoPickerControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BG.BGPhotoPickerControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BGPhotoPickerControllerDemo.app/BGPhotoPickerControllerDemo";
+			};
+			name = Release;
+		};
+		CE0C0BD71BCCE99C007878EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BGPhotoPickerControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BG.BGPhotoPickerControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BGPhotoPickerControllerDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CE0C0BD81BCCE99C007878EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BGPhotoPickerControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BG.BGPhotoPickerControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BGPhotoPickerControllerDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE0C0BA31BCCE99C007878EE /* Build configuration list for PBXProject "BGPhotoPickerControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0C0BCE1BCCE99C007878EE /* Debug */,
+				CE0C0BCF1BCCE99C007878EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0C0BD01BCCE99C007878EE /* Build configuration list for PBXNativeTarget "BGPhotoPickerControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0C0BD11BCCE99C007878EE /* Debug */,
+				CE0C0BD21BCCE99C007878EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0C0BD31BCCE99C007878EE /* Build configuration list for PBXNativeTarget "BGPhotoPickerControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0C0BD41BCCE99C007878EE /* Debug */,
+				CE0C0BD51BCCE99C007878EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0C0BD61BCCE99C007878EE /* Build configuration list for PBXNativeTarget "BGPhotoPickerControllerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0C0BD71BCCE99C007878EE /* Debug */,
+				CE0C0BD81BCCE99C007878EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE0C0BA01BCCE99C007878EE /* Project object */;
+}

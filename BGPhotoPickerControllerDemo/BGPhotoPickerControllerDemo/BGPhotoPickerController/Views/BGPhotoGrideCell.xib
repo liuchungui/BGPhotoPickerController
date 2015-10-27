@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BGPhotoGrideCell" id="X1R-jY-o3A" customClass="BGPhotoGrideCell" customModule="BGPhotoPickerControllerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="166" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DGX-zT-ogK">
+                        <rect key="frame" x="0.0" y="0.0" width="166" height="159"/>
+                        <animations/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AssetsPickerChecked.png" translatesAutoresizingMaskIntoConstraints="NO" id="0lA-eb-AU9">
+                        <rect key="frame" x="133" y="5" width="28" height="28"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="BoR-pf-YSP"/>
+                            <constraint firstAttribute="width" constant="28" id="iwU-Jb-hvT"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DGX-zT-ogK" secondAttribute="trailing" id="3Ru-xr-fS9"/>
+                <constraint firstItem="DGX-zT-ogK" firstAttribute="top" secondItem="X1R-jY-o3A" secondAttribute="top" id="CUE-aQ-25G"/>
+                <constraint firstItem="0lA-eb-AU9" firstAttribute="centerY" secondItem="DGX-zT-ogK" secondAttribute="centerY" id="Ofp-mk-YVT"/>
+                <constraint firstAttribute="bottom" secondItem="DGX-zT-ogK" secondAttribute="bottom" id="P1i-UF-Npp"/>
+                <constraint firstItem="0lA-eb-AU9" firstAttribute="centerX" secondItem="DGX-zT-ogK" secondAttribute="centerX" id="Y8x-Cl-4eG"/>
+                <constraint firstItem="0lA-eb-AU9" firstAttribute="top" secondItem="X1R-jY-o3A" secondAttribute="top" constant="5" id="e2X-MP-Xte"/>
+                <constraint firstItem="DGX-zT-ogK" firstAttribute="leading" secondItem="X1R-jY-o3A" secondAttribute="leading" id="giW-ld-338"/>
+                <constraint firstAttribute="trailing" secondItem="0lA-eb-AU9" secondAttribute="trailing" constant="5" id="vcj-1B-C7e"/>
+            </constraints>
+            <size key="customSize" width="166" height="159"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Ofp-mk-YVT"/>
+                    <exclude reference="Y8x-Cl-4eG"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="DGX-zT-ogK" id="vIG-aB-Lvp"/>
+                <outlet property="selectImageView" destination="0lA-eb-AU9" id="s6y-32-7k9"/>
+            </connections>
+            <point key="canvasLocation" x="258" y="240.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="AssetsPickerChecked.png" width="14" height="14"/>
+    </resources>
+</document>
