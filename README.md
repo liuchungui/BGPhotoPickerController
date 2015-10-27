@@ -1,0 +1,2 @@
+# BGPhotoPickerController
+一个基于Photos框架写的照片选择控制器
