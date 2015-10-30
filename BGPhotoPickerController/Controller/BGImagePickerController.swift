@@ -19,7 +19,7 @@ class BGImagePickerController: UINavigationController, UINavigationControllerDel
     
     // MARK: public property
     /// 图片选择代理
-    var pickerDelegate: BGImagePickerControllerDelegate?
+    weak var pickerDelegate: BGImagePickerControllerDelegate? = nil
     /// 获取图片大小，默认是获取原图
     var tagetSize: CGSize = PHImageManagerMaximumSize
     /// 内容mode

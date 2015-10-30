@@ -16,4 +16,9 @@ class BGPhotoPreviewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    override func setNeedsLayout() {
+        super.setNeedsLayout()
+        self.layoutIfNeeded()
+    }
 }

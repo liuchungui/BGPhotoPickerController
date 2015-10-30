@@ -51,7 +51,7 @@ extension UIView {
         get {
             return self.frame.origin.y + self.frame.size.height
         }
-        set(newValue) {
+        set (newValue){
             self.frame.origin.y = newValue - self.frame.size.height
         }
     }
@@ -71,6 +71,24 @@ extension UIView {
         }
         set (newValue) {
             self.frame.size.height = newValue
+        }
+    }
+    
+    var centerX: CGFloat {
+        get {
+            return self.center.x
+        }
+        set (newValue) {
+            self.center.x = newValue
+        }
+    }
+    
+    var centerY: CGFloat {
+        get {
+            return self.center.y
+        }
+        set (newValue) {
+            self.center.y = newValue
         }
     }
     

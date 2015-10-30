@@ -8,6 +8,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BGPhotoPreviewViewController" customModule="BGPhotoPickerControllerDemo" customModuleProvider="target">
             <connections>
                 <outlet property="bottomBaseView" destination="lLY-0o-uPL" id="yU9-Md-SvS"/>
+                <outlet property="bottomCollectionView" destination="koz-0C-yYT" id="NJm-He-esH"/>
+                <outlet property="bottomCollectionViewLayout" destination="gzi-Z2-eYE" id="55E-Wc-0jJ"/>
                 <outlet property="collectionView" destination="dGv-Z5-1PV" id="oCI-0z-5W0"/>
                 <outlet property="scrollIndexLabel" destination="ub0-cQ-IJt" id="7tU-T7-s9c"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -71,17 +73,28 @@
                         <constraint firstAttribute="trailing" secondItem="hxl-iJ-A65" secondAttribute="trailing" id="r7J-jF-UfM"/>
                     </constraints>
                 </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="koz-0C-yYT">
+                    <rect key="frame" x="0.0" y="404" width="320" height="100"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="LuG-9N-RGW"/>
+                    </constraints>
+                    <collectionViewLayout key="collectionViewLayout" id="gzi-Z2-eYE" customClass="BGSelectImageLayout" customModule="BGPhotoPickerControllerDemo"/>
+                </collectionView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="koz-0C-yYT" secondAttribute="trailing" id="3GM-IC-EwJ"/>
                 <constraint firstAttribute="bottom" secondItem="dGv-Z5-1PV" secondAttribute="bottom" id="5uO-pT-0PS"/>
                 <constraint firstItem="dGv-Z5-1PV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Ap-Vi-BaH"/>
                 <constraint firstAttribute="bottom" secondItem="lLY-0o-uPL" secondAttribute="bottom" id="8Fr-b2-k8y"/>
                 <constraint firstAttribute="trailing" secondItem="dGv-Z5-1PV" secondAttribute="trailing" constant="-20" id="GFD-S1-OVZ"/>
                 <constraint firstItem="lLY-0o-uPL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IjF-M1-Fi5"/>
                 <constraint firstItem="dGv-Z5-1PV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LpK-t0-Mtf"/>
+                <constraint firstItem="koz-0C-yYT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nxy-LK-Dcv"/>
                 <constraint firstAttribute="trailing" secondItem="lLY-0o-uPL" secondAttribute="trailing" id="RRJ-mN-ccY"/>
+                <constraint firstItem="lLY-0o-uPL" firstAttribute="top" secondItem="koz-0C-yYT" secondAttribute="bottom" id="XiI-Bx-AhR"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
