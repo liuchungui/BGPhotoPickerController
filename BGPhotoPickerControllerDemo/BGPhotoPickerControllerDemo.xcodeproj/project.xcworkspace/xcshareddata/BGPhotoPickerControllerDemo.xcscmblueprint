@@ -1,21 +1,28 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "a3b81449-874a-49d8-89b8-abc6735313e8++3031",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "88EBDAB27BC50618802DB30D218CD1117EC8A51A",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "a3b81449-874a-49d8-89b8-abc6735313e8++3031" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "88EBDAB27BC50618802DB30D218CD1117EC8A51A" : 0,
     "a3b81449-874a-49d8-89b8-abc6735313e8++3031" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6E5F3E0A-4B38-41C0-87C5-0C8DFDAFDB5D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "88EBDAB27BC50618802DB30D218CD1117EC8A51A" : "BGPhotoPickerController\/",
     "a3b81449-874a-49d8-89b8-abc6735313e8++3031" : "182.92.5.161iOs\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "BGPhotoPickerControllerDemo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BGPhotoPickerControllerDemo\/BGPhotoPickerControllerDemo.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/liuchungui\/BGPhotoPickerController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "88EBDAB27BC50618802DB30D218CD1117EC8A51A"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/182.92.5.161",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
