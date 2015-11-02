@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dGv-Z5-1PV">
-                    <rect key="frame" x="0.0" y="0.0" width="340" height="568"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <animations/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sng-mw-6Rd">
                         <size key="itemSize" width="50" height="50"/>
@@ -89,7 +89,7 @@
                 <constraint firstAttribute="bottom" secondItem="dGv-Z5-1PV" secondAttribute="bottom" id="5uO-pT-0PS"/>
                 <constraint firstItem="dGv-Z5-1PV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Ap-Vi-BaH"/>
                 <constraint firstAttribute="bottom" secondItem="lLY-0o-uPL" secondAttribute="bottom" id="8Fr-b2-k8y"/>
-                <constraint firstAttribute="trailing" secondItem="dGv-Z5-1PV" secondAttribute="trailing" constant="-20" id="GFD-S1-OVZ"/>
+                <constraint firstAttribute="trailing" secondItem="dGv-Z5-1PV" secondAttribute="trailing" id="GFD-S1-OVZ"/>
                 <constraint firstItem="lLY-0o-uPL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IjF-M1-Fi5"/>
                 <constraint firstItem="dGv-Z5-1PV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LpK-t0-Mtf"/>
                 <constraint firstItem="koz-0C-yYT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nxy-LK-Dcv"/>

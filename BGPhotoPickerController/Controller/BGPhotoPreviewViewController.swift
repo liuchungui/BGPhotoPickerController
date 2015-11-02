@@ -24,6 +24,8 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
     var isMainScreen: Bool = false
     var targetSize = CGSizeMake(MainScreenWidth*2, MainScreenHeight*2)
     var currentPage = 0
+    //选中的索引
+    private var selectIndexPath: NSIndexPath = NSIndexPath(forRow: 0, inSection: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +46,6 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
         layout.itemSize = CGSize(width: MainScreenWidth, height: MainScreenHeight)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
-        layout.footerReferenceSize = CGSizeMake(20, MainScreenHeight)
         //register
         self.collectionView.registerNib(UINib(nibName: BGPhotoPreviewCell.reuseIdentify(), bundle: NSBundle.mainBundle()), forCellWithReuseIdentifier: BGPhotoPreviewCell.reuseIdentify())
         
@@ -173,6 +174,9 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
     
     // MARK: - BGSelectImageLayoutDelegate method
     func selectImageLayout(layout: BGSelectImageLayout, selectIndexPath: NSIndexPath) {
+        if self.selectIndexPath == selectIndexPath {
+            return
+        }
         self.collectionView.scrollToItemAtIndexPath(NSIndexPath(forRow: 0, inSection: selectIndexPath.row), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
     }
     
@@ -217,6 +221,12 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
         let page = Int(self.collectionView.contentOffset.x / self.collectionView.width)
         if let assets = self.assetsArr {
             self.scrollIndexLabel.text = "\(page+1)/\(assets.count)"
+        }
+        //设置底部视图
+        let selectIndexPath = NSIndexPath(forRow: page, inSection: 0)
+        if selectIndexPath != self.selectIndexPath {
+            self.selectIndexPath = selectIndexPath
+            self.bottomCollectionViewLayout.selectIndexPath = selectIndexPath
         }
     }
     
