@@ -19,7 +19,6 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
     @IBOutlet weak var bottomCollectionViewLayout: BGSelectImageLayout!
     //相片资源
     var assetsArr:[PHAsset]?
-    var imagesDic = [Int: UIImage]()
     /** 是否全屏 */
     var isMainScreen: Bool = false
     var targetSize = CGSizeMake(MainScreenWidth*2, MainScreenHeight*2)
@@ -50,7 +49,7 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
         self.collectionView.registerNib(UINib(nibName: BGPhotoPreviewCell.reuseIdentify(), bundle: NSBundle.mainBundle()), forCellWithReuseIdentifier: BGPhotoPreviewCell.reuseIdentify())
         
         //底部collectionView
-        self.bottomCollectionViewLayout.itemSize = CGSizeMake(60, 100)
+        self.bottomCollectionViewLayout.itemSize = CGSizeMake(30, 50)
         self.bottomCollectionViewLayout.delegate = self
         //设置内容区域
         self.bottomCollectionViewLayout.contentInset = UIEdgeInsetsMake(0, MainScreenWidth/2.0-self.bottomCollectionViewLayout.itemSize.width-self.bottomCollectionViewLayout.interitemSpacing, 0, MainScreenWidth/2.0-self.bottomCollectionViewLayout.itemSize.width-self.bottomCollectionViewLayout.interitemSpacing)
@@ -59,13 +58,13 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
         self.bottomCollectionView.delegate = self
         self.bottomCollectionView.showsHorizontalScrollIndicator = false
         self.bottomCollectionView.showsVerticalScrollIndicator = false
-        self.bottomCollectionView.backgroundColor = UIColor.whiteColor()
+        self.bottomCollectionView.backgroundColor = RGB(250, 250, 250)
         
         self.bottomCollectionView.registerNib(UINib(nibName: BGPhotoPreviewCell.reuseIdentify(), bundle: NSBundle.mainBundle()), forCellWithReuseIdentifier: BGPhotoPreviewCell.reuseIdentify())
         self.bottomCollectionView.registerClass(UIView.self, forSupplementaryViewOfKind: UIView.reuseIdentify(), withReuseIdentifier: UIView.reuseIdentify())
         
         //更新底部视图
-        self.updateScrollPageIndexLabel()
+        self.updateScrollPageIndexLabel(0)
     }
     
     // MARK: - UICollectionViewDataSource method
@@ -98,20 +97,14 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
         if collectionView == self.collectionView {
             let cell: BGPhotoPreviewCell = collectionView.dequeueReusableCellWithReuseIdentifier(BGPhotoPreviewCell.reuseIdentify(), forIndexPath: indexPath) as! BGPhotoPreviewCell
             
-            if let image = self.imagesDic[indexPath.section] {
-                cell.imageView.image = image
-            }
-            else{
-                // Increment the cell's tag
-                let currentTag = cell.tag + 1;
-                cell.tag = currentTag;
-                
-                let asset: PHAsset = self.assetsArr![indexPath.section]
-                PHCachingImageManager.defaultManager().requestImageForAsset(asset, targetSize: self.targetSize, contentMode: PHImageContentMode.AspectFit, options: nil) { (image, info) -> Void in
-                    if(cell.tag == currentTag) {
-                        cell.imageView.image = image
-                        self.imagesDic[indexPath.section] = image
-                    }
+            // Increment the cell's tag
+            let currentTag = cell.tag + 1;
+            cell.tag = currentTag;
+            
+            let asset: PHAsset = self.assetsArr![indexPath.section]
+            PHCachingImageManager.defaultManager().requestImageForAsset(asset, targetSize: self.targetSize, contentMode: PHImageContentMode.AspectFit, options: nil) { (image, info) -> Void in
+                if(cell.tag == currentTag) {
+                    cell.imageView.image = image
                 }
             }
             return cell
@@ -156,7 +149,8 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if !decelerate {
             if scrollView == self.collectionView {
-                self.updateScrollPageIndexLabel()
+                let page = Int(self.collectionView.contentOffset.x / self.collectionView.width)
+                self.updateScrollPageIndexLabel(page)
             }
             else {
                 self.bottomCollectionViewLayout.configureWhenScrollStop()
@@ -165,7 +159,8 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
     }
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         if scrollView == self.collectionView {
-            self.updateScrollPageIndexLabel()
+            let page = Int(self.collectionView.contentOffset.x / self.collectionView.width)
+            self.updateScrollPageIndexLabel(page)
         }
         else {
             self.bottomCollectionViewLayout.configureWhenScrollStop()
@@ -178,6 +173,8 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
             return
         }
         self.collectionView.scrollToItemAtIndexPath(NSIndexPath(forRow: 0, inSection: selectIndexPath.row), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
+        //设置页数
+        self.updateScrollPageIndexLabel(selectIndexPath.row)
     }
     
     // MARK: - button action
@@ -217,8 +214,7 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
         }
     }
     
-    func updateScrollPageIndexLabel() {
-        let page = Int(self.collectionView.contentOffset.x / self.collectionView.width)
+    func updateScrollPageIndexLabel(page: Int) {
         if let assets = self.assetsArr {
             self.scrollIndexLabel.text = "\(page+1)/\(assets.count)"
         }
