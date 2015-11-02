@@ -27,6 +27,7 @@ class BGSelectImageLayout: UICollectionViewLayout {
     var interitemSpacing: CGFloat = 10
     /// 每个cell大小
     var itemSize: CGSize = CGSizeMake(45, 45)
+    /// 代理
     weak var delegate: BGSelectImageLayoutDelegate? = nil
     
     /// cell布局信息
@@ -48,11 +49,16 @@ class BGSelectImageLayout: UICollectionViewLayout {
             return self.currentSelectIndexPath
         }
         set (indexPath) {
-            self.lastSelectIndexPath = self.currentSelectIndexPath
-            self.currentSelectIndexPath = indexPath
-            self.collectionView?.reloadSections(NSIndexSet(index: 0))
-            //调用代理方法
-            self.delegate?.selectImageLayout(self, selectIndexPath: indexPath)
+            if indexPath != self.currentSelectIndexPath {
+                self.lastSelectIndexPath = self.currentSelectIndexPath
+                self.currentSelectIndexPath = indexPath
+                self.collectionView?.reloadSections(NSIndexSet(index: 0))
+                //调用代理方法
+                self.delegate?.selectImageLayout(self, selectIndexPath: indexPath)
+            }
+            else{
+                self.collectionView?.scrollToItemAtIndexPath(self.currentSelectIndexPath, atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
+            }
         }
     }
     
@@ -200,12 +206,20 @@ class BGSelectImageLayout: UICollectionViewLayout {
         //判断停留的时候，中心点在哪个cell内部
         let contentOffset = self.collectionView!.contentOffset
         let center = CGPointMake(contentOffset.x+self.collectionView!.width/2.0, self.itemSize.height/2.0)
+        print("offset:\(contentOffset), center:\(center)")
         for (indexPath, attributes) in self.layoutInfoDic {
-            var spacing = self.interitemSpacing
-            if self.selectIndexPath == indexPath {
-                spacing = self.interitemSpacing*2
+            let spacing = self.interitemSpacing
+            var rect = attributes.frame
+            if indexPath.row < self.currentSelectIndexPath.row {
+                rect = CGRectMake(attributes.frame.left, attributes.frame.top, attributes.frame.width+spacing*2, attributes.frame.height)
             }
-            if CGRectContainsPoint(CGRectMake(attributes.frame.left-spacing/2.0, attributes.frame.top, attributes.frame.width+spacing, attributes.frame.height), center) {
+            else if indexPath.row > self.currentSelectIndexPath.row {
+                rect = CGRectMake(attributes.frame.left-spacing, attributes.frame.top, attributes.frame.width+spacing, attributes.frame.height)
+            }
+            else {
+                rect = CGRectMake(attributes.frame.left-spacing, attributes.frame.top, attributes.frame.width+2*spacing, attributes.frame.height)
+            }
+            if CGRectContainsPoint(rect, center) {
                 self.selectIndexPath = indexPath
                 break
             }

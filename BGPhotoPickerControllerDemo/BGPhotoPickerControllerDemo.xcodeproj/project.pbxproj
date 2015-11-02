@@ -54,6 +54,10 @@
 		CE0C0BB61BCCE99C007878EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0BB41BCCE99C007878EE /* LaunchScreen.storyboard */; };
 		CE0C0BC11BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BC01BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.swift */; };
 		CE0C0BCC1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BCB1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.swift */; };
+		CEFD70B11BE7C33D000FCF30 /* ImageSelectedOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFD70AF1BE7C33D000FCF30 /* ImageSelectedOff@2x.png */; };
+		CEFD70B21BE7C33D000FCF30 /* ImageSelectedOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFD70B01BE7C33D000FCF30 /* ImageSelectedOff@3x.png */; };
+		CEFD70B51BE7C35B000FCF30 /* ImageSelectedOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFD70B31BE7C35B000FCF30 /* ImageSelectedOn@2x.png */; };
+		CEFD70B61BE7C35B000FCF30 /* ImageSelectedOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFD70B41BE7C35B000FCF30 /* ImageSelectedOn@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +132,10 @@
 		CE0C0BC71BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGPhotoPickerControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0C0BCB1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGPhotoPickerControllerDemoUITests.swift; sourceTree = "<group>"; };
 		CE0C0BCD1BCCE99C007878EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFD70AF1BE7C33D000FCF30 /* ImageSelectedOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOff@2x.png"; sourceTree = "<group>"; };
+		CEFD70B01BE7C33D000FCF30 /* ImageSelectedOff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOff@3x.png"; sourceTree = "<group>"; };
+		CEFD70B31BE7C35B000FCF30 /* ImageSelectedOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOn@2x.png"; sourceTree = "<group>"; };
+		CEFD70B41BE7C35B000FCF30 /* ImageSelectedOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOn@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +223,10 @@
 		CE0B693E1BE3708E006983F1 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				CEFD70B31BE7C35B000FCF30 /* ImageSelectedOn@2x.png */,
+				CEFD70B41BE7C35B000FCF30 /* ImageSelectedOn@3x.png */,
+				CEFD70AF1BE7C33D000FCF30 /* ImageSelectedOff@2x.png */,
+				CEFD70B01BE7C33D000FCF30 /* ImageSelectedOff@3x.png */,
 				CE0B693F1BE3708E006983F1 /* AssetsPickerChecked@2x.png */,
 				CE0B69401BE3708E006983F1 /* nav_back@2x.png */,
 			);
@@ -426,11 +438,15 @@
 			files = (
 				CE0B69591BE3708E006983F1 /* BGPhotoPreviewCell.xib in Resources */,
 				CE0C0BB61BCCE99C007878EE /* LaunchScreen.storyboard in Resources */,
+				CEFD70B11BE7C33D000FCF30 /* ImageSelectedOff@2x.png in Resources */,
 				CE0B69521BE3708E006983F1 /* AssetsPickerChecked@2x.png in Resources */,
 				CE0B694F1BE3708E006983F1 /* BGPhotoPreviewViewController.xib in Resources */,
+				CEFD70B61BE7C35B000FCF30 /* ImageSelectedOn@3x.png in Resources */,
 				CE0B69551BE3708E006983F1 /* BGPhotoGrideCell.xib in Resources */,
 				CE0B694C1BE3708E006983F1 /* BGPhotoGrideController.xib in Resources */,
 				CE0B69571BE3708E006983F1 /* BGPhotoListCell.xib in Resources */,
+				CEFD70B21BE7C33D000FCF30 /* ImageSelectedOff@3x.png in Resources */,
+				CEFD70B51BE7C35B000FCF30 /* ImageSelectedOn@2x.png in Resources */,
 				CE0B69531BE3708E006983F1 /* nav_back@2x.png in Resources */,
 				CE0C0BB31BCCE99C007878EE /* Assets.xcassets in Resources */,
 				CE0C0BB11BCCE99C007878EE /* Main.storyboard in Resources */,

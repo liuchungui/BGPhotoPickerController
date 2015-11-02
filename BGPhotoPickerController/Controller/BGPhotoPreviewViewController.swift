@@ -64,6 +64,7 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
         self.bottomCollectionView.registerClass(UIView.self, forSupplementaryViewOfKind: UIView.reuseIdentify(), withReuseIdentifier: UIView.reuseIdentify())
         
         //更新底部视图
+//        self.bottomBaseView.layer.backgroundColor = RGB(255, 255, 255, 0.6).CGColor
         self.updateScrollPageIndexLabel(0)
     }
     

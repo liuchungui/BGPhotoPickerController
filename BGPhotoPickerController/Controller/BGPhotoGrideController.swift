@@ -64,13 +64,15 @@ class BGPhotoGrideController: BGPhotoBaseController, UICollectionViewDataSource,
         self.automaticallyAdjustsScrollViewInsets = false
         
         //创建collectionView
+        let rowCount = CGFloat(BGPhotoGrideControllerRowCount)
+        let spacing:CGFloat = 1.0
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.minimumInteritemSpacing = 0
-        flowLayout.minimumLineSpacing = 0
+        flowLayout.minimumInteritemSpacing = spacing
+        flowLayout.minimumLineSpacing = spacing
         flowLayout.scrollDirection = UICollectionViewScrollDirection.Vertical
         flowLayout.headerReferenceSize = CGSizeMake(MainScreenWidth, 74)
         flowLayout.footerReferenceSize = CGSizeMake(MainScreenWidth, 10)
-        flowLayout.itemSize = CGSizeMake(MainScreenWidth/CGFloat(BGPhotoGrideControllerRowCount), MainScreenWidth/CGFloat(BGPhotoGrideControllerRowCount))
+        flowLayout.itemSize = CGSizeMake((MainScreenWidth-(rowCount-1)*spacing)/rowCount, (MainScreenWidth-(rowCount-1)*spacing)/rowCount)
         
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: flowLayout)
         collectionView.translatesAutoresizingMaskIntoConstraints = true

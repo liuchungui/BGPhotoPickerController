@@ -9,6 +9,7 @@
 import UIKit
 
 class BGPhotoGrideCell: UICollectionViewCell {
+    private var isDidSelect = false
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var selectImageView: UIImageView!
     
@@ -18,6 +19,7 @@ class BGPhotoGrideCell: UICollectionViewCell {
         self.layer.borderWidth = 0.3
         self.layer.masksToBounds = true
         self.isSelect = false
+        self.selectImageView.hidden = false
     }
     
     //MARK: var value
@@ -31,10 +33,16 @@ class BGPhotoGrideCell: UICollectionViewCell {
     }
     var isSelect: Bool {
         get {
-            return !self.selectImageView.hidden
+            return self.isDidSelect
         }
         set(newValue) {
-            self.selectImageView.hidden = !newValue
+            self.isDidSelect = newValue
+            if newValue {
+                self.selectImageView.image = UIImage(named: "ImageSelectedOn.png")
+            }
+            else {
+                self.selectImageView.image = UIImage(named: "ImageSelectedOff.png")
+            }
         }
     }
 }

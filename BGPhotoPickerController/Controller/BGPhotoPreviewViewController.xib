@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BGPhotoPreviewViewController" customModule="BGPhotoPickerControllerDemo" customModuleProvider="target">
             <connections>
-                <outlet property="bottomBaseView" destination="lLY-0o-uPL" id="yU9-Md-SvS"/>
+                <outlet property="bottomBaseView" destination="w5C-eI-y6r" id="P3F-n0-VMm"/>
                 <outlet property="bottomCollectionView" destination="koz-0C-yYT" id="NJm-He-esH"/>
                 <outlet property="bottomCollectionViewLayout" destination="gzi-Z2-eYE" id="55E-Wc-0jJ"/>
                 <outlet property="collectionView" destination="dGv-Z5-1PV" id="oCI-0z-5W0"/>
@@ -85,16 +85,27 @@
                             </constraints>
                             <collectionViewLayout key="collectionViewLayout" id="gzi-Z2-eYE" customClass="BGSelectImageLayout" customModule="BGPhotoPickerControllerDemo"/>
                         </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfc-7M-e8P">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="7Vu-no-nGK"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <animations/>
                     <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="Lfc-7M-e8P" firstAttribute="leading" secondItem="w5C-eI-y6r" secondAttribute="leading" id="0oX-YY-c9Q"/>
                         <constraint firstItem="lLY-0o-uPL" firstAttribute="top" secondItem="koz-0C-yYT" secondAttribute="bottom" id="4Xj-DA-Zmv"/>
                         <constraint firstAttribute="bottom" secondItem="lLY-0o-uPL" secondAttribute="bottom" id="6XT-Lh-f05"/>
+                        <constraint firstAttribute="trailing" secondItem="Lfc-7M-e8P" secondAttribute="trailing" id="7tf-6P-eH9"/>
                         <constraint firstAttribute="trailing" secondItem="lLY-0o-uPL" secondAttribute="trailing" id="IjK-OG-OB3"/>
                         <constraint firstAttribute="trailing" secondItem="koz-0C-yYT" secondAttribute="trailing" id="Pec-MR-rEa"/>
                         <constraint firstItem="lLY-0o-uPL" firstAttribute="leading" secondItem="w5C-eI-y6r" secondAttribute="leading" id="e0C-Vx-osv"/>
                         <constraint firstItem="koz-0C-yYT" firstAttribute="top" secondItem="w5C-eI-y6r" secondAttribute="top" constant="5" id="exw-4e-cxj"/>
+                        <constraint firstItem="Lfc-7M-e8P" firstAttribute="top" secondItem="w5C-eI-y6r" secondAttribute="top" id="j9c-n4-eoe"/>
                         <constraint firstAttribute="height" constant="128" id="ubF-FX-Bk7"/>
                         <constraint firstItem="koz-0C-yYT" firstAttribute="leading" secondItem="w5C-eI-y6r" secondAttribute="leading" id="yx7-ey-ChM"/>
                     </constraints>

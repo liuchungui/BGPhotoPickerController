@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="166" height="159"/>
                         <animations/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AssetsPickerChecked.png" translatesAutoresizingMaskIntoConstraints="NO" id="0lA-eb-AU9">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageSelectedOff.png" translatesAutoresizingMaskIntoConstraints="NO" id="0lA-eb-AU9">
                         <rect key="frame" x="133" y="5" width="28" height="28"/>
                         <animations/>
                         <constraints>
@@ -56,6 +56,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="AssetsPickerChecked.png" width="14" height="14"/>
+        <image name="ImageSelectedOff.png" width="44" height="44"/>
     </resources>
 </document>
