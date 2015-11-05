@@ -70,9 +70,9 @@ class BGPhotoGrideController: BGPhotoBaseController, UICollectionViewDataSource,
         flowLayout.minimumInteritemSpacing = spacing
         flowLayout.minimumLineSpacing = spacing
         flowLayout.scrollDirection = UICollectionViewScrollDirection.Vertical
-        flowLayout.headerReferenceSize = CGSizeMake(MainScreenWidth, 74)
-        flowLayout.footerReferenceSize = CGSizeMake(MainScreenWidth, 10)
-        flowLayout.itemSize = CGSizeMake((MainScreenWidth-(rowCount-1)*spacing)/rowCount, (MainScreenWidth-(rowCount-1)*spacing)/rowCount)
+        flowLayout.headerReferenceSize = CGSizeMake(BGMainScreenWidth, 74)
+        flowLayout.footerReferenceSize = CGSizeMake(BGMainScreenWidth, 10)
+        flowLayout.itemSize = CGSizeMake((BGMainScreenWidth-(rowCount-1)*spacing)/rowCount, (BGMainScreenWidth-(rowCount-1)*spacing)/rowCount)
         
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: flowLayout)
         collectionView.translatesAutoresizingMaskIntoConstraints = true
@@ -165,7 +165,7 @@ class BGPhotoGrideController: BGPhotoBaseController, UICollectionViewDataSource,
 
         if let fetchResult = self.ablum?.fetchResult {
             let asset: PHAsset = fetchResult[indexPath.item] as! PHAsset
-            PHCachingImageManager.defaultManager().requestImageForAsset(asset, targetSize: CGSizeMake(MainScreenWidth/CGFloat(BGPhotoGrideControllerRowCount), MainScreenWidth/CGFloat(BGPhotoGrideControllerRowCount)), contentMode:PHImageContentMode.AspectFit, options: nil, resultHandler: { (image, info) -> Void in
+            PHCachingImageManager.defaultManager().requestImageForAsset(asset, targetSize: CGSizeMake(BGMainScreenWidth/CGFloat(BGPhotoGrideControllerRowCount), BGMainScreenWidth/CGFloat(BGPhotoGrideControllerRowCount)), contentMode:PHImageContentMode.AspectFit, options: nil, resultHandler: { (image, info) -> Void in
                 // Only update the thumbnail if the cell tag hasn't changed. Otherwise, the cell has been re-used.
                 if (cell.tag == currentTag) {
                     cell.image = image;

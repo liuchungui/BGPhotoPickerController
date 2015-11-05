@@ -30,7 +30,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         self.collectionView.showsHorizontalScrollIndicator = false
         //设置layout中的Item大小
         let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width: MainScreenWidth, height: MainScreenHeight)
+        layout.itemSize = CGSize(width: BGMainScreenWidth, height: BGMainScreenHeight)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         //register

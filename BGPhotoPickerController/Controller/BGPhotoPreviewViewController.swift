@@ -21,7 +21,7 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
     var assetsArr:[PHAsset]?
     /** 是否全屏 */
     var isMainScreen: Bool = false
-    var targetSize = CGSizeMake(MainScreenWidth*2, MainScreenHeight*2)
+    var targetSize = CGSizeMake(BGMainScreenWidth*2, BGMainScreenHeight*2)
     var currentPage = 0
     //选中的索引
     private var selectIndexPath: NSIndexPath = NSIndexPath(forRow: 0, inSection: 0)
@@ -42,7 +42,7 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
         
         //设置layout中的Item大小
         let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width: MainScreenWidth, height: MainScreenHeight)
+        layout.itemSize = CGSize(width: BGMainScreenWidth, height: BGMainScreenHeight)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         //register
@@ -52,7 +52,7 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
         self.bottomCollectionViewLayout.itemSize = CGSizeMake(30, 50)
         self.bottomCollectionViewLayout.delegate = self
         //设置内容区域
-        self.bottomCollectionViewLayout.contentInset = UIEdgeInsetsMake(0, MainScreenWidth/2.0-self.bottomCollectionViewLayout.itemSize.width-self.bottomCollectionViewLayout.interitemSpacing, 0, MainScreenWidth/2.0-self.bottomCollectionViewLayout.itemSize.width-self.bottomCollectionViewLayout.interitemSpacing)
+        self.bottomCollectionViewLayout.contentInset = UIEdgeInsetsMake(0, BGMainScreenWidth/2.0-self.bottomCollectionViewLayout.itemSize.width-self.bottomCollectionViewLayout.interitemSpacing, 0, BGMainScreenWidth/2.0-self.bottomCollectionViewLayout.itemSize.width-self.bottomCollectionViewLayout.interitemSpacing)
         
         self.bottomCollectionView.dataSource = self
         self.bottomCollectionView.delegate = self
@@ -196,7 +196,7 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
             self.navigationController?.navigationBar.alpha = 1.0
             self.collectionView.backgroundColor = UIColor.whiteColor()
             //底部视图
-            self.bottomBaseView.top = MainScreenHeight - self.bottomBaseView.height
+            self.bottomBaseView.top = BGMainScreenHeight - self.bottomBaseView.height
             self.bottomBaseView.alpha = 1.0
         }
     }
@@ -210,7 +210,7 @@ class BGPhotoPreviewViewController: BGPhotoBaseController, UICollectionViewDataS
             self.navigationController?.navigationBar.alpha = 0
             self.collectionView.backgroundColor = UIColor.blackColor()
             //底部视图
-            self.bottomBaseView.top = MainScreenHeight
+            self.bottomBaseView.top = BGMainScreenHeight
             self.bottomBaseView.alpha = 0
         }
     }

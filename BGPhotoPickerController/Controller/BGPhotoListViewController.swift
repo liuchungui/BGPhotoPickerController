@@ -50,7 +50,7 @@ class BGPhotoListViewController: BGPhotoBaseController, UITableViewDataSource, U
         self.view.addSubview(tableView)
         
         //设置头
-        tableView.tableHeaderView = UIView(frame: CGRectMake(0, 0, MainScreenWidth, 64))
+        tableView.tableHeaderView = UIView(frame: CGRectMake(0, 0, BGMainScreenWidth, 64))
         
         //注册cell
         tableView.registerNib(UINib(nibName: BGPhotoListCell.reuseIdentify(), bundle: NSBundle.mainBundle()), forCellReuseIdentifier: BGPhotoListCell.reuseIdentify())

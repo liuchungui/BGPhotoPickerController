@@ -28,8 +28,6 @@
 		CE0B694F1BE3708E006983F1 /* BGPhotoPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B693A1BE3708E006983F1 /* BGPhotoPreviewViewController.xib */; };
 		CE0B69501BE3708E006983F1 /* BGPhotoAblum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B693C1BE3708E006983F1 /* BGPhotoAblum.swift */; };
 		CE0B69511BE3708E006983F1 /* BGPhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B693D1BE3708E006983F1 /* BGPhotoAsset.swift */; };
-		CE0B69521BE3708E006983F1 /* AssetsPickerChecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0B693F1BE3708E006983F1 /* AssetsPickerChecked@2x.png */; };
-		CE0B69531BE3708E006983F1 /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0B69401BE3708E006983F1 /* nav_back@2x.png */; };
 		CE0B69541BE3708E006983F1 /* BGPhotoGrideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B69421BE3708E006983F1 /* BGPhotoGrideCell.swift */; };
 		CE0B69551BE3708E006983F1 /* BGPhotoGrideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B69431BE3708E006983F1 /* BGPhotoGrideCell.xib */; };
 		CE0B69561BE3708E006983F1 /* BGPhotoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B69441BE3708E006983F1 /* BGPhotoListCell.swift */; };
@@ -37,16 +35,6 @@
 		CE0B69581BE3708E006983F1 /* BGPhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B69461BE3708E006983F1 /* BGPhotoPreviewCell.swift */; };
 		CE0B69591BE3708E006983F1 /* BGPhotoPreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B69471BE3708E006983F1 /* BGPhotoPreviewCell.xib */; };
 		CE0B69721BE37403006983F1 /* BGSelectImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B69711BE37403006983F1 /* BGSelectImageLayout.swift */; };
-		CE0B69801BE37454006983F1 /* BGConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B69751BE37454006983F1 /* BGConstant.swift */; };
-		CE0B69811BE37454006983F1 /* BGUtilFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B69761BE37454006983F1 /* BGUtilFunction.swift */; };
-		CE0B69821BE37454006983F1 /* CGRect+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B69781BE37454006983F1 /* CGRect+BGExtension.swift */; };
-		CE0B69831BE37454006983F1 /* UIButton+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B69791BE37454006983F1 /* UIButton+BGExtension.swift */; };
-		CE0B69841BE37454006983F1 /* UICollectionViewCell+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B697A1BE37454006983F1 /* UICollectionViewCell+BGExtension.swift */; };
-		CE0B69851BE37454006983F1 /* UIImage+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B697B1BE37454006983F1 /* UIImage+BGExtension.swift */; };
-		CE0B69861BE37454006983F1 /* UITableViewCell+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B697C1BE37454006983F1 /* UITableViewCell+BGExtension.swift */; };
-		CE0B69871BE37454006983F1 /* UIView+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B697D1BE37454006983F1 /* UIView+BGExtension.swift */; };
-		CE0B69881BE37454006983F1 /* UIViewController+BGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B697E1BE37454006983F1 /* UIViewController+BGExtension.swift */; };
-		CE0B698A1BE374F8006983F1 /* BGBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B69891BE374F8006983F1 /* BGBaseViewController.swift */; };
 		CE0C0BAC1BCCE99C007878EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BAB1BCCE99C007878EE /* AppDelegate.swift */; };
 		CE0C0BAE1BCCE99C007878EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BAD1BCCE99C007878EE /* ViewController.swift */; };
 		CE0C0BB11BCCE99C007878EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0BAF1BCCE99C007878EE /* Main.storyboard */; };
@@ -54,6 +42,15 @@
 		CE0C0BB61BCCE99C007878EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0BB41BCCE99C007878EE /* LaunchScreen.storyboard */; };
 		CE0C0BC11BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BC01BCCE99C007878EE /* BGPhotoPickerControllerDemoTests.swift */; };
 		CE0C0BCC1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BCB1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.swift */; };
+		CE0DF5DC1BEB604D00C86C3E /* BGBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF5D21BEB604D00C86C3E /* BGBaseNavigationController.swift */; };
+		CE0DF5DD1BEB604D00C86C3E /* BGBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF5D31BEB604D00C86C3E /* BGBaseViewController.swift */; };
+		CE0DF5DE1BEB604D00C86C3E /* BGConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF5D41BEB604D00C86C3E /* BGConstant.swift */; };
+		CE0DF5DF1BEB604D00C86C3E /* BGUtilFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF5D51BEB604D00C86C3E /* BGUtilFunction.swift */; };
+		CE0DF5E01BEB604D00C86C3E /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF5D71BEB604D00C86C3E /* CGRect.swift */; };
+		CE0DF5E11BEB604D00C86C3E /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF5D81BEB604D00C86C3E /* UICollectionViewCell.swift */; };
+		CE0DF5E21BEB604D00C86C3E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF5D91BEB604D00C86C3E /* UIImage.swift */; };
+		CE0DF5E31BEB604D00C86C3E /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF5DA1BEB604D00C86C3E /* UITableViewCell.swift */; };
+		CE0DF5E41BEB604D00C86C3E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF5DB1BEB604D00C86C3E /* UIView.swift */; };
 		CEFD70B11BE7C33D000FCF30 /* ImageSelectedOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFD70AF1BE7C33D000FCF30 /* ImageSelectedOff@2x.png */; };
 		CEFD70B21BE7C33D000FCF30 /* ImageSelectedOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFD70B01BE7C33D000FCF30 /* ImageSelectedOff@3x.png */; };
 		CEFD70B51BE7C35B000FCF30 /* ImageSelectedOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFD70B31BE7C35B000FCF30 /* ImageSelectedOn@2x.png */; };
@@ -100,8 +97,6 @@
 		CE0B693A1BE3708E006983F1 /* BGPhotoPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGPhotoPreviewViewController.xib; sourceTree = "<group>"; };
 		CE0B693C1BE3708E006983F1 /* BGPhotoAblum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoAblum.swift; sourceTree = "<group>"; };
 		CE0B693D1BE3708E006983F1 /* BGPhotoAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoAsset.swift; sourceTree = "<group>"; };
-		CE0B693F1BE3708E006983F1 /* AssetsPickerChecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AssetsPickerChecked@2x.png"; sourceTree = "<group>"; };
-		CE0B69401BE3708E006983F1 /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
 		CE0B69421BE3708E006983F1 /* BGPhotoGrideCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoGrideCell.swift; sourceTree = "<group>"; };
 		CE0B69431BE3708E006983F1 /* BGPhotoGrideCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGPhotoGrideCell.xib; sourceTree = "<group>"; };
 		CE0B69441BE3708E006983F1 /* BGPhotoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoListCell.swift; sourceTree = "<group>"; };
@@ -109,16 +104,6 @@
 		CE0B69461BE3708E006983F1 /* BGPhotoPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGPhotoPreviewCell.swift; sourceTree = "<group>"; };
 		CE0B69471BE3708E006983F1 /* BGPhotoPreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGPhotoPreviewCell.xib; sourceTree = "<group>"; };
 		CE0B69711BE37403006983F1 /* BGSelectImageLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGSelectImageLayout.swift; sourceTree = "<group>"; };
-		CE0B69751BE37454006983F1 /* BGConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGConstant.swift; sourceTree = "<group>"; };
-		CE0B69761BE37454006983F1 /* BGUtilFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGUtilFunction.swift; sourceTree = "<group>"; };
-		CE0B69781BE37454006983F1 /* CGRect+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+BGExtension.swift"; sourceTree = "<group>"; };
-		CE0B69791BE37454006983F1 /* UIButton+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+BGExtension.swift"; sourceTree = "<group>"; };
-		CE0B697A1BE37454006983F1 /* UICollectionViewCell+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+BGExtension.swift"; sourceTree = "<group>"; };
-		CE0B697B1BE37454006983F1 /* UIImage+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+BGExtension.swift"; sourceTree = "<group>"; };
-		CE0B697C1BE37454006983F1 /* UITableViewCell+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+BGExtension.swift"; sourceTree = "<group>"; };
-		CE0B697D1BE37454006983F1 /* UIView+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BGExtension.swift"; sourceTree = "<group>"; };
-		CE0B697E1BE37454006983F1 /* UIViewController+BGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+BGExtension.swift"; sourceTree = "<group>"; };
-		CE0B69891BE374F8006983F1 /* BGBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGBaseViewController.swift; sourceTree = "<group>"; };
 		CE0C0BA81BCCE99C007878EE /* BGPhotoPickerControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGPhotoPickerControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0C0BAB1BCCE99C007878EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0C0BAD1BCCE99C007878EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +117,15 @@
 		CE0C0BC71BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGPhotoPickerControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0C0BCB1BCCE99C007878EE /* BGPhotoPickerControllerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGPhotoPickerControllerDemoUITests.swift; sourceTree = "<group>"; };
 		CE0C0BCD1BCCE99C007878EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0DF5D21BEB604D00C86C3E /* BGBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGBaseNavigationController.swift; sourceTree = "<group>"; };
+		CE0DF5D31BEB604D00C86C3E /* BGBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGBaseViewController.swift; sourceTree = "<group>"; };
+		CE0DF5D41BEB604D00C86C3E /* BGConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGConstant.swift; sourceTree = "<group>"; };
+		CE0DF5D51BEB604D00C86C3E /* BGUtilFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGUtilFunction.swift; sourceTree = "<group>"; };
+		CE0DF5D71BEB604D00C86C3E /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		CE0DF5D81BEB604D00C86C3E /* UICollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
+		CE0DF5D91BEB604D00C86C3E /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		CE0DF5DA1BEB604D00C86C3E /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		CE0DF5DB1BEB604D00C86C3E /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CEFD70AF1BE7C33D000FCF30 /* ImageSelectedOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOff@2x.png"; sourceTree = "<group>"; };
 		CEFD70B01BE7C33D000FCF30 /* ImageSelectedOff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOff@3x.png"; sourceTree = "<group>"; };
 		CEFD70B31BE7C35B000FCF30 /* ImageSelectedOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOn@2x.png"; sourceTree = "<group>"; };
@@ -227,8 +221,6 @@
 				CEFD70B41BE7C35B000FCF30 /* ImageSelectedOn@3x.png */,
 				CEFD70AF1BE7C33D000FCF30 /* ImageSelectedOff@2x.png */,
 				CEFD70B01BE7C33D000FCF30 /* ImageSelectedOff@3x.png */,
-				CE0B693F1BE3708E006983F1 /* AssetsPickerChecked@2x.png */,
-				CE0B69401BE3708E006983F1 /* nav_back@2x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -252,31 +244,6 @@
 				CE0B69711BE37403006983F1 /* BGSelectImageLayout.swift */,
 			);
 			path = Layout;
-			sourceTree = "<group>";
-		};
-		CE0B69731BE37454006983F1 /* BGFoundationKit */ = {
-			isa = PBXGroup;
-			children = (
-				CE0B69891BE374F8006983F1 /* BGBaseViewController.swift */,
-				CE0B69751BE37454006983F1 /* BGConstant.swift */,
-				CE0B69761BE37454006983F1 /* BGUtilFunction.swift */,
-				CE0B69771BE37454006983F1 /* Extension */,
-			);
-			path = BGFoundationKit;
-			sourceTree = "<group>";
-		};
-		CE0B69771BE37454006983F1 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				CE0B69781BE37454006983F1 /* CGRect+BGExtension.swift */,
-				CE0B69791BE37454006983F1 /* UIButton+BGExtension.swift */,
-				CE0B697A1BE37454006983F1 /* UICollectionViewCell+BGExtension.swift */,
-				CE0B697B1BE37454006983F1 /* UIImage+BGExtension.swift */,
-				CE0B697C1BE37454006983F1 /* UITableViewCell+BGExtension.swift */,
-				CE0B697D1BE37454006983F1 /* UIView+BGExtension.swift */,
-				CE0B697E1BE37454006983F1 /* UIViewController+BGExtension.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		CE0C0B9F1BCCE99C007878EE = {
@@ -303,7 +270,7 @@
 		CE0C0BAA1BCCE99C007878EE /* BGPhotoPickerControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CE0B69731BE37454006983F1 /* BGFoundationKit */,
+				CE0DF5D11BEB604D00C86C3E /* BGFoundationKit */,
 				CE08B7B71BCE07700063FCE5 /* Snapkit */,
 				CE0C0BAB1BCCE99C007878EE /* AppDelegate.swift */,
 				CE0C0BAD1BCCE99C007878EE /* ViewController.swift */,
@@ -331,6 +298,30 @@
 				CE0C0BCD1BCCE99C007878EE /* Info.plist */,
 			);
 			path = BGPhotoPickerControllerDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE0DF5D11BEB604D00C86C3E /* BGFoundationKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE0DF5D21BEB604D00C86C3E /* BGBaseNavigationController.swift */,
+				CE0DF5D31BEB604D00C86C3E /* BGBaseViewController.swift */,
+				CE0DF5D41BEB604D00C86C3E /* BGConstant.swift */,
+				CE0DF5D51BEB604D00C86C3E /* BGUtilFunction.swift */,
+				CE0DF5D61BEB604D00C86C3E /* Extension */,
+			);
+			path = BGFoundationKit;
+			sourceTree = "<group>";
+		};
+		CE0DF5D61BEB604D00C86C3E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE0DF5D71BEB604D00C86C3E /* CGRect.swift */,
+				CE0DF5D81BEB604D00C86C3E /* UICollectionViewCell.swift */,
+				CE0DF5D91BEB604D00C86C3E /* UIImage.swift */,
+				CE0DF5DA1BEB604D00C86C3E /* UITableViewCell.swift */,
+				CE0DF5DB1BEB604D00C86C3E /* UIView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,7 +430,6 @@
 				CE0B69591BE3708E006983F1 /* BGPhotoPreviewCell.xib in Resources */,
 				CE0C0BB61BCCE99C007878EE /* LaunchScreen.storyboard in Resources */,
 				CEFD70B11BE7C33D000FCF30 /* ImageSelectedOff@2x.png in Resources */,
-				CE0B69521BE3708E006983F1 /* AssetsPickerChecked@2x.png in Resources */,
 				CE0B694F1BE3708E006983F1 /* BGPhotoPreviewViewController.xib in Resources */,
 				CEFD70B61BE7C35B000FCF30 /* ImageSelectedOn@3x.png in Resources */,
 				CE0B69551BE3708E006983F1 /* BGPhotoGrideCell.xib in Resources */,
@@ -447,7 +437,6 @@
 				CE0B69571BE3708E006983F1 /* BGPhotoListCell.xib in Resources */,
 				CEFD70B21BE7C33D000FCF30 /* ImageSelectedOff@3x.png in Resources */,
 				CEFD70B51BE7C35B000FCF30 /* ImageSelectedOn@2x.png in Resources */,
-				CE0B69531BE3708E006983F1 /* nav_back@2x.png in Resources */,
 				CE0C0BB31BCCE99C007878EE /* Assets.xcassets in Resources */,
 				CE0C0BB11BCCE99C007878EE /* Main.storyboard in Resources */,
 			);
@@ -474,40 +463,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0B69811BE37454006983F1 /* BGUtilFunction.swift in Sources */,
 				CE0B69511BE3708E006983F1 /* BGPhotoAsset.swift in Sources */,
-				CE0B69881BE37454006983F1 /* UIViewController+BGExtension.swift in Sources */,
+				CE0DF5DF1BEB604D00C86C3E /* BGUtilFunction.swift in Sources */,
 				CE08B7C61BCE07700063FCE5 /* Constraint.swift in Sources */,
-				CE0B69871BE37454006983F1 /* UIView+BGExtension.swift in Sources */,
+				CE0DF5DE1BEB604D00C86C3E /* BGConstant.swift in Sources */,
 				CE0B69541BE3708E006983F1 /* BGPhotoGrideCell.swift in Sources */,
-				CE0B698A1BE374F8006983F1 /* BGBaseViewController.swift in Sources */,
 				CE0C0BAE1BCCE99C007878EE /* ViewController.swift in Sources */,
 				CE0B69581BE3708E006983F1 /* BGPhotoPreviewCell.swift in Sources */,
-				CE0B69851BE37454006983F1 /* UIImage+BGExtension.swift in Sources */,
+				CE0DF5E11BEB604D00C86C3E /* UICollectionViewCell.swift in Sources */,
+				CE0DF5E01BEB604D00C86C3E /* CGRect.swift in Sources */,
+				CE0DF5E21BEB604D00C86C3E /* UIImage.swift in Sources */,
 				CE08B7D21BCE07700063FCE5 /* ViewController+SnapKit.swift in Sources */,
 				CE0B694A1BE3708E006983F1 /* BGPhotoBaseController.swift in Sources */,
 				CE08B7C71BCE07700063FCE5 /* ConstraintAttributes.swift in Sources */,
 				CE08B7CD1BCE07700063FCE5 /* EdgeInsets.swift in Sources */,
-				CE0B69841BE37454006983F1 /* UICollectionViewCell+BGExtension.swift in Sources */,
 				CE0C0BAC1BCCE99C007878EE /* AppDelegate.swift in Sources */,
-				CE0B69861BE37454006983F1 /* UITableViewCell+BGExtension.swift in Sources */,
 				CE0B694B1BE3708E006983F1 /* BGPhotoGrideController.swift in Sources */,
 				CE0B69491BE3708E006983F1 /* BGImagePickerController.swift in Sources */,
 				CE0B69561BE3708E006983F1 /* BGPhotoListCell.swift in Sources */,
 				CE08B7CC1BCE07700063FCE5 /* Debugging.swift in Sources */,
 				CE0B69721BE37403006983F1 /* BGSelectImageLayout.swift in Sources */,
-				CE0B69801BE37454006983F1 /* BGConstant.swift in Sources */,
 				CE08B7D01BCE07700063FCE5 /* SnapKit.swift in Sources */,
-				CE0B69831BE37454006983F1 /* UIButton+BGExtension.swift in Sources */,
 				CE0B694D1BE3708E006983F1 /* BGPhotoListViewController.swift in Sources */,
-				CE0B69821BE37454006983F1 /* CGRect+BGExtension.swift in Sources */,
 				CE0B69501BE3708E006983F1 /* BGPhotoAblum.swift in Sources */,
 				CE08B7D11BCE07700063FCE5 /* View+SnapKit.swift in Sources */,
 				CE0B694E1BE3708E006983F1 /* BGPhotoPreviewViewController.swift in Sources */,
 				CE08B7CB1BCE07700063FCE5 /* ConstraintRelation.swift in Sources */,
 				CE08B7CA1BCE07700063FCE5 /* ConstraintMaker.swift in Sources */,
+				CE0DF5E31BEB604D00C86C3E /* UITableViewCell.swift in Sources */,
 				CE08B7CF1BCE07700063FCE5 /* LayoutConstraint.swift in Sources */,
 				CE08B7C81BCE07700063FCE5 /* ConstraintDescription.swift in Sources */,
+				CE0DF5E41BEB604D00C86C3E /* UIView.swift in Sources */,
+				CE0DF5DC1BEB604D00C86C3E /* BGBaseNavigationController.swift in Sources */,
+				CE0DF5DD1BEB604D00C86C3E /* BGBaseViewController.swift in Sources */,
 				CE08B7C91BCE07700063FCE5 /* ConstraintItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
