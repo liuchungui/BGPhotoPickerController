@@ -12,9 +12,14 @@ import Photos
 typealias BGSelectImageBlock = (image:UIImage?) -> Void
 
 struct BGPhotoAsset  {
-    var asset: PHAsset
-    var tagetSize: CGSize = PHImageManagerMaximumSize
-    var contentMode: PHImageContentMode = PHImageContentMode.Default
+    private var asset: PHAsset
+    private var tagetSize: CGSize = PHImageManagerMaximumSize
+    private var contentMode: PHImageContentMode = PHImageContentMode.Default
+    var photoAsset: PHAsset {
+        get {
+            return self.asset
+        }
+    }
     init(_ asset: PHAsset, size tagetSize:CGSize, contentMode: PHImageContentMode) {
         self.asset = asset
         self.tagetSize = tagetSize
