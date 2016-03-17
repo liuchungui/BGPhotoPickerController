@@ -127,15 +127,15 @@ class BGSelectImageLayout: UICollectionViewLayout {
             //reload的时候，才加入
             if item.updateAction == .Reload {
                 let indexPath = item.indexPathBeforeUpdate
-                self.updateIndexPathArr.append(indexPath)
+                self.updateIndexPathArr.append(indexPath!)
             }
             else if item.updateAction == .Delete {
                 let indexPath = item.indexPathBeforeUpdate
-                self.deleteIndexPathArr.append(indexPath)
+                self.deleteIndexPathArr.append(indexPath!)
             }
             else if item.updateAction == .Insert {
                 let indexPath = item.indexPathBeforeUpdate
-                self.insertIndexPathArr.append(indexPath)
+                self.insertIndexPathArr.append(indexPath!)
             }
         }
     }
